@@ -21,13 +21,23 @@ function AddShoe() {
         };
     };
 
+    function handleSubmit(e) {
+        e.preventDefault();
+        setNewShoe({
+            name: "",
+            brand: "",
+            price: "",
+            imageURL: ""
+        });
+    };
+
     return (
         <>
             <header>
                 <NavBar />
             </header>
             <main>
-            <form className="form">
+            <form className="form" onSubmit={handleSubmit}>
                     <table>
                         <tbody>
                             <tr>
