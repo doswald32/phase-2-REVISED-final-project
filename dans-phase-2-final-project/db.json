@@ -1,0 +1,46 @@
+{
+    "shoes": [
+      {
+        "id": 1,
+        "brand": "Nike",
+        "name": "Air Max 95",
+        "price": "$195",
+        "image": "https://www.nike.com/u/custom-nike-air-max-95-by-you-10001245/6124601354?_gl=1*tume90*_up*MQ..&gclid=CjwKCAjw0YGyBhByEiwAQmBEWukIwW-0xTEpjGvjU70MfnjPY21l6ATp0XXnV4fD_qZivYcKHpMEUhoCVCkQAvD_BwE&gclsrc=aw.ds"
+      },
+      {
+        "id": 2,
+        "brand": "Jordan",
+        "name": "Air Jordan 1 High OG",
+        "price": "$160",
+        "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b1778add-1da0-4891-b830-f5105b15ea56/air-jordan-1-high-og-big-kids-shoes-kwqPnW.png"
+      },
+      {
+        "id": 3,
+        "brand": "Nike",
+        "name": "G.T. Jump 2",
+        "price": "$180",
+        "image": "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/18c7823c-e004-4e71-8562-1a02bb65b3e5/gt-jump-2-mens-basketball-shoes-CZpmDQ.png"
+      },
+      {
+        "id": 1,
+        "brand": "Nike",
+        "name": "Air Max 95",
+        "price": "$195",
+        "image": "https://www.nike.com/u/custom-nike-air-max-95-by-you-10001245/6124601354?_gl=1*tume90*_up*MQ..&gclid=CjwKCAjw0YGyBhByEiwAQmBEWukIwW-0xTEpjGvjU70MfnjPY21l6ATp0XXnV4fD_qZivYcKHpMEUhoCVCkQAvD_BwE&gclsrc=aw.ds"
+      },
+      {
+        "id": 4,
+        "brand": "Adidas",
+        "name": "Samba Decon",
+        "price": "$150",
+        "image": "https://assets.adidas.com/images/w_303,h_303,f_auto,q_auto,fl_lossy,c_fill,g_auto/e1894f1063c14ba6aa65afd2012bc9d2_9366/samba-decon-shoes.jpg"
+      },
+      {
+        "id": 5,
+        "brand": "Adidas",
+        "name": "Forum 84 Low CL",
+        "price": "$120",
+        "image": "https://assets.adidas.com/images/w_303,h_303,f_auto,q_auto,fl_lossy,c_fill,g_auto/7362c650237a42fc8c4490d19250f102_9366/forum-84-low-cl-shoes.jpg"
+      }
+    ]
+  }
