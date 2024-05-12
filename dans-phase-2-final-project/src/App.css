@@ -9,4 +9,20 @@
   text-decoration: none;
   text-align: center;
   color: white;
-};
+}
+
+.brands-container {
+  display: inline-block;
+  margin: auto;
+}
+
+.brand {
+  display: inline-block;
+  text-align: center;
+  margin: 5px;
+}
+
+.brand-image {
+  height: 140px;
+  width: 140px;
+}
