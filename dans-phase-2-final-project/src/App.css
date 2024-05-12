@@ -30,3 +30,16 @@
 .button {
   margin-left: 120px;
 }
+
+.shoe-card {
+  border: solid;
+  display: inline-block;
+  margin: auto;
+  width: 200px;
+}
+
+.shoes-list {
+  display: inline-block;
+  text-align: center;
+  margin: 5px;
+}

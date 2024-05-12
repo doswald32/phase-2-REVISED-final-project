@@ -1,5 +1,6 @@
 import NavBar from "./NavBar";
 import { useState, useEffect } from "react";
+import ShoeCard from "./ShoeCard";
 
 function Shoes() {
     const [shoesList, setShoesList] = useState([]);
@@ -10,13 +11,17 @@ function Shoes() {
         .then(data => setShoesList(data))
     }, []);
 
+    console.log(shoesList);
+
     return (
         <>
             <header>
                 <NavBar />
             </header>
             <main>
-                <div>Shoes</div>
+                <div className="shoes-list">{shoesList.map((shoe) => {
+                    return <ShoeCard key={shoe.id} name={shoe.name} brand={shoe.brand} price={shoe.price} imageURL={shoe.imageURL}/>
+                })}</div>
             </main>
         </>
     )
