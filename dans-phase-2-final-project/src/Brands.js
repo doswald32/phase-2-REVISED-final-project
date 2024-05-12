@@ -2,6 +2,11 @@ import NavBar from "./NavBar";
 import { Link } from "react-router-dom";
 
 function Brands() {
+
+    function handleClick() {
+        console.log("test");
+    }
+
     return (
         <>
             <header>
@@ -25,7 +30,7 @@ function Brands() {
                         <h2>Adidas</h2>
                         <img className="brand-image" src="https://images.footlocker.com/content/dam/Resources/shared/brand-logos/adidas/adidas-originals.svg" alt="Adidas logo" />
                         <br/>
-                        <Link to="/shoes">Click to see Adidas shoes</Link>
+                        <Link to="/shoes" onClick={handleClick}>Click to see Adidas shoes</Link>
                     </div>
                 </div>
                 
