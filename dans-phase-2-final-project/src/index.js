@@ -5,6 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Error from "./Error";
+import Brands from "./Brands";
+import Shoes from "./Shoes";
+import AddShoe from "./AddShoe";
 
 const router = createBrowserRouter([
   {
