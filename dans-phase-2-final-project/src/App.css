@@ -32,7 +32,6 @@
 }
 
 .shoe-card {
-  border: solid;
   display: inline-block;
   margin: auto;
   width: 200px;
@@ -42,4 +41,9 @@
   display: inline-block;
   text-align: center;
   margin: 5px;
+}
+
+.shoe-image {
+  height: 140px;
+  width: 140px;
 }

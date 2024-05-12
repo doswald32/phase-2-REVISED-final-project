@@ -11,8 +11,6 @@ function Shoes() {
         .then(data => setShoesList(data))
     }, []);
 
-    console.log(shoesList);
-
     return (
         <>
             <header>
