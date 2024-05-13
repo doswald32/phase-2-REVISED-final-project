@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <NavBar />
       </header>
-      <main>
+      <main className="home-body">
         <h1>Welcome!</h1>
         <h3>Instructions</h3>
         <p>- Click on the Brands link to be taken to a list of shoe brands. From there, you can click on a particular brand to see a list of shoes offered by that particular brand.</p>

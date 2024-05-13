@@ -1,6 +1,15 @@
 import { NavLink } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 function NavBar() {
+    const [shoesList, setShoesList] = useState([]);
+
+    useEffect(() => {
+        fetch("http://localhost:3001/shoes")
+        .then(r => r.json())
+        .then(data => setShoesList(data))
+    }, []);
+
     return (
         <nav>
             <NavLink
@@ -9,13 +18,13 @@ function NavBar() {
             >
               Home
             </NavLink>
-            <NavLink
+            <NavLink shoesList={shoesList}
             to="/brands"
             className="nav-link"
             >
               Brands
             </NavLink>
-            <NavLink 
+            <NavLink shoesList={shoesList}
             to="/shoes"
             className="nav-link"
             >
