@@ -1,9 +1,14 @@
 import { Link } from "react-router-dom";
+import { Outlet, useOutletContext } from "react-router-dom";
 
 function Brands() {
+    const {shoesList, setShoesList} = useOutletContext();
 
     function handleClick(e) {
-        console.log(e);
+        if (e.target.id === "nike") {
+            let nikeShoes = shoesList.filter((shoe) => shoe.brand === "Nike");
+            setShoesList(nikeShoes);
+        }
     }
 
     return (
