@@ -14,12 +14,16 @@ function App() {
 
   console.log(shoesList);
 
+  function addShoe(newShoe) {
+    setShoesList([...shoesList, newShoe]);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
         <NavBar />
       </header>
-      <Outlet context={{shoesList, setShoesList}}/>
+      <Outlet context={{shoesList, setShoesList, addShoe}}/>
     </div>
   );
 }

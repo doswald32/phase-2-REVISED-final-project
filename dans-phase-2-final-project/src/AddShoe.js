@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useOutletContext } from "react-router-dom";
 
 function AddShoe() {
     const [newShoe, setNewShoe] = useState({
@@ -7,6 +8,7 @@ function AddShoe() {
         price: "",
         imageURL: ""
     });
+    const {addShoe} = useOutletContext();
 
     function handleChange(e) {
         if (e.target.id === "brand") {
@@ -28,7 +30,16 @@ function AddShoe() {
             price: "",
             imageURL: ""
         });
+        const configObj = {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({newShoe})
+        };
+        fetch("http://localhost:3001/shoes", configObj)
+        .then(res => res.json())
+        .then(data => addShoe(data))
     };
+
 
     return (
         <>
