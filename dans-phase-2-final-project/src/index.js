@@ -14,21 +14,20 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     errorElement: <Error />,
-  },
-  {
-    path: "/brands",
-    element: <Brands />,
-    errorElement: <Error />,
-  },
-  {
-    path: "/shoes",
-    element: <Shoes />,
-    errorElement: <Error />,
-  },
-  {
-    path: "/add-a-shoe",
-    element: <AddShoe />,
-    errorElement: <Error />,
+    children: [
+      {
+        path: "/brands",
+        element: <Brands />
+      },
+      {
+        path: "/shoes",
+        element: <Shoes />
+      },
+      {
+        path: "/add-a-shoe",
+        element: <AddShoe />
+      }
+    ]
   }
 ]);
 

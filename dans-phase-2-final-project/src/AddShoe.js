@@ -33,9 +33,6 @@ function AddShoe() {
 
     return (
         <>
-            <header>
-                <NavBar />
-            </header>
             <main>
             <form className="form" onSubmit={handleSubmit}>
                     <table>
