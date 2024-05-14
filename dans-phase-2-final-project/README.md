@@ -6,9 +6,9 @@ This app allows you to view a list of shoes, sort that list by a few key name-br
 
 ## Requirements to use the app
 
-This app uses a json file to simulate communication with a server. In order to use the simulator, you'll need to have json-server installed on your local machine. If you do not have json-server installed, you can find instructions on how to do so here: https://www.npmjs.com/package/json-server
+This app uses a json file to simulate communication with a server. In order to use the app, you'll need to have json-server installed on your local machine. If you do not have json-server installed, you can find instructions on how to do so here: https://www.npmjs.com/package/json-server
 
-You'll also need to install react router using 'npm install react-router-dom@6'. You can find information here: https://www.npmjs.com/package/react-router
+You'll also need to use react router. To install, use 'npm install react-router-dom@6'. You can find more information on react router here: https://www.npmjs.com/package/react-router
 
 Then, you'll need to open a terminal and run 'npm run server' which will open the db.json file in your browser. Be sure to add '/shoes' to the end of the URL to see the contents of the file in your browser. 
 
