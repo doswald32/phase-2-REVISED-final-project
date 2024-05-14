@@ -1,15 +1,22 @@
 import { Link } from "react-router-dom";
-import { Outlet, useOutletContext } from "react-router-dom";
+import { useOutletContext } from "react-router-dom";
 
 function Brands() {
     const {shoesList, setShoesList} = useOutletContext();
 
     function handleClick(e) {
+        setShoesList((shoes) => shoes);
         if (e.target.id === "nike") {
             let nikeShoes = shoesList.filter((shoe) => shoe.brand === "Nike");
             setShoesList(nikeShoes);
-        }
-    }
+        } else if (e.target.id === "jordan") {
+            let jordanShoes = shoesList.filter((shoe) => shoe.brand === "Jordan");
+            setShoesList(jordanShoes);
+        } else if (e.target.id === "adidas") {
+            let adidasShoes = shoesList.filter((shoe) => shoe.brand === "Adidas");
+            setShoesList(adidasShoes);
+        };
+    };
 
     return (
         <>

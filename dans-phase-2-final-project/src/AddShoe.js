@@ -54,7 +54,7 @@ function AddShoe() {
                             </tr>
                         </tbody>
                     </table>
-                    <button className="button">Submit</button>
+                    <button className="submit-button">Submit</button>
                 </form>
             </main>
         </>

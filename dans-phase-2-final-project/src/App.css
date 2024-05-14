@@ -31,8 +31,12 @@
   width: 140px;
 }
 
-.button {
+.submit-button {
   margin-left: 120px;
+}
+
+.reset-button {
+  margin: 5px;
 }
 
 .shoe-card {
