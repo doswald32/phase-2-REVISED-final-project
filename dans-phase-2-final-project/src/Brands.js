@@ -1,4 +1,3 @@
-import NavBar from "./NavBar";
 import { Link } from "react-router-dom";
 
 function Brands() {
@@ -9,9 +8,6 @@ function Brands() {
 
     return (
         <>
-            <header>
-                <NavBar />
-            </header>
             <main>
                 <div className="brands-container">
                     <div className="brand">

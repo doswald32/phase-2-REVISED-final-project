@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import NavBar from "./NavBar";
 import ShoeCard from "./ShoeCard";
 
 function Shoes() {
@@ -13,9 +12,6 @@ function Shoes() {
 
     return (
         <>
-            <header>
-                <NavBar />
-            </header>
             <main>
                 <div className="shoes-list">{shoesList.map((shoe) => {
                     return <ShoeCard key={shoe.id} name={shoe.name} brand={shoe.brand} price={shoe.price} imageURL={shoe.imageURL}/>

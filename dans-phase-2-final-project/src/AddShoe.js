@@ -1,4 +1,3 @@
-import NavBar from "./NavBar";
 import React, { useState } from "react";
 
 function AddShoe() {

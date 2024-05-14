@@ -8,6 +8,7 @@ import Error from "./Error";
 import Brands from "./Brands";
 import Shoes from "./Shoes";
 import AddShoe from "./AddShoe";
+import Home from "./Home";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <Error />,
     children: [
+      {
+        path: "/",
+        element: <Home />
+      },
       {
         path: "/brands",
         element: <Brands />
