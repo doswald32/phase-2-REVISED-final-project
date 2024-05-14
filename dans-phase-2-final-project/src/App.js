@@ -12,8 +12,6 @@ function App() {
       .then(data => setShoesList(data))
   }, []);
 
-  console.log(shoesList);
-
   function addShoe(newShoe) {
     setShoesList([...shoesList, newShoe]);
   }

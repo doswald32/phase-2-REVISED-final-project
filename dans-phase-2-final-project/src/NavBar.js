@@ -14,7 +14,7 @@ function NavBar() {
             to="/brands"
             className="nav-link"
             >
-              Brands
+              Key Brands
             </NavLink>
             <NavLink 
             to="/shoes"

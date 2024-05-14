@@ -24,20 +24,25 @@ function AddShoe() {
 
     function handleSubmit(e) {
         e.preventDefault();
+        const configObj = {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                brand: newShoe.brand,
+                name: newShoe.name,
+                price: newShoe.price,
+                imageURL: newShoe.imageURL
+            })
+        };
+        fetch("http://localhost:3001/shoes", configObj)
+        .then(res => res.json())
+        .then(data => addShoe(data))
         setNewShoe({
             name: "",
             brand: "",
             price: "",
             imageURL: ""
         });
-        const configObj = {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({newShoe})
-        };
-        fetch("http://localhost:3001/shoes", configObj)
-        .then(res => res.json())
-        .then(data => addShoe(data))
     };
 
 
