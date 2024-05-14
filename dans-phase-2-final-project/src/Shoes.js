@@ -1,14 +1,6 @@
-import { useState, useEffect } from "react";
 import ShoeCard from "./ShoeCard";
 
 function Shoes() {
-    const [shoesList, setShoesList] = useState([]);
-
-    useEffect(() => {
-        fetch("http://localhost:3001/shoes")
-        .then(r => r.json())
-        .then(data => setShoesList(data))
-    }, []);
 
     return (
         <>
