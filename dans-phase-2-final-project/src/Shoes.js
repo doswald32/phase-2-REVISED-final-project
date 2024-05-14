@@ -1,6 +1,10 @@
 import ShoeCard from "./ShoeCard";
+import { Outlet, useOutletContext } from "react-router-dom";
 
 function Shoes() {
+    const shoesList = useOutletContext();
+
+    console.log(shoesList);
 
     return (
         <>

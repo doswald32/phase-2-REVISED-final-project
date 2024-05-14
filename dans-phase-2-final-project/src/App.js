@@ -17,7 +17,7 @@ function App() {
       <header className="App-header">
         <NavBar />
       </header>
-      <Outlet />
+      <Outlet context={shoesList}/>
     </div>
   );
 }
